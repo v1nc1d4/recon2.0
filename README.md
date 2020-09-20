@@ -27,3 +27,18 @@ After installing all of the dependencies for the Recon2.0 you can finally start 
 ```
 $ recon <domain.com>
 ```
+## Notification
+
+Don't forget to add your Slack webhook url to get notifications
+## Tools
+
+Tools that will be installed:
+- [Go](https://github.com/golang)
+- [Subfinder](https://github.com/projectdiscovery/subfinder)
+- [Assetfinder](https://github.com/tomnomnom/assetfinder)
+- [Amass](https://github.com/OWASP/Amass)
+- [Shuffledns](https://github.com/projectdiscovery/shuffledns)
+- [Httpx](https://github.com/projectdiscovery/httpx)
+- [Nuclei](https://github.com/projectdiscovery/nuclei)
+- [Waybackurls](https://github.com/tomnomnom/waybackurls)
+- [ffuf](https://github.com/ffuf/ffuf)
