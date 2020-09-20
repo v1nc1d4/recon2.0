@@ -10,9 +10,13 @@
 ```
 A automatied Script for recon by the use of some other Tools
 
-# Easy installation
+### Easy installation
 wget the `install.sh` script and run it
 `wget https://raw.githubusercontent.com/blackmarketer/recon2.0/master/install.sh`
 
 `bash install.sh`
 
+### Manual installation
+- `git clone https://github.com/blackmarketer/recon2.0`
+ - `cd recon2.0`
+ - `./install.sh`
