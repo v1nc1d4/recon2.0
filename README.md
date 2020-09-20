@@ -42,3 +42,5 @@ Tools that will be installed:
 - [Nuclei](https://github.com/projectdiscovery/nuclei)
 - [Waybackurls](https://github.com/tomnomnom/waybackurls)
 - [ffuf](https://github.com/ffuf/ffuf)
+
+Inspired from [Reconpi](https://github.com/x1mdev/ReconPi)
