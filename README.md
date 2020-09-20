@@ -44,4 +44,4 @@ Tools that will be installed:
 - [ffuf](https://github.com/ffuf/ffuf)
 
 
-     Inspired from [Reconpi](https://github.com/x1mdev/ReconPi)
+     Inspired and Idea from [Reconpi](https://github.com/x1mdev/ReconPi)
