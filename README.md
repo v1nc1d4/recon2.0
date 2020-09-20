@@ -43,7 +43,5 @@ Tools that will be installed:
 - [Waybackurls](https://github.com/tomnomnom/waybackurls)
 - [ffuf](https://github.com/ffuf/ffuf)
 
-```
-  Inspired from [Reconpi](https://github.com/x1mdev/ReconPi)
 
-```
+     Inspired from [Reconpi](https://github.com/x1mdev/ReconPi)
