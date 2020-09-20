@@ -20,6 +20,7 @@ checkArguments() {
 			exit 1
 		fi
 }
+checkArguments
 makedir() {
 mkdir -p $domain $domain/sources $domain/recon $domain/nuclei $domain/recon/wayback $domain/recon/gf
 }
