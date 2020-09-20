@@ -10,6 +10,7 @@
 ```
 A automatied Script for recon by the use of some other Tools
 
-Add slack url at variable $slack_url to receive notifications through slack
-
-# Usage ./recon.sh domain.com
+# Easy installation
+wget the install.sh script and run it
+'wget https://raw.githubusercontent.com/blackmarketer/recon2.0/master/install.sh'
+'bash install.sh'
