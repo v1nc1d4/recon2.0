@@ -20,3 +20,10 @@ wget the `install.sh` script and run it
 - `git clone https://github.com/blackmarketer/recon2.0`
  - `cd recon2.0`
  - `./install.sh`
+## Usage
+
+After installing all of the dependencies for the Recon2.0 you can finally start doing some recon!
+
+```
+$ recon <domain.com>
+```
