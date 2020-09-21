@@ -59,7 +59,7 @@ shuffledns -d $domain -list $domain/sources/all.txt -o $domain/domains.txt -r $r
 resolving
 
 httpx(){
-cat $domain/domains.txt|httpx -threads 200 -o $domain/recon/httpx.txt
+cat $domain/domains.txt | httpx -threads 200 -o $domain/recon/httpx.txt
 }
 httpx
 
