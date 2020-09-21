@@ -3,7 +3,7 @@
 YELLOW="\033[1;33m"
 GREEN="\033[0;32m"
 domain=$1
-wordlist="$HOME/SecLists/Discovery/DNS/all.txt"
+wordlist="$HOME/all.txt"
 resolvers="$HOME/resolvers.txt"
 slack_url=""
 
