@@ -59,7 +59,7 @@ shuffledns -d $domain -list $domain/sources/all.txt -o $domain/domains.txt -r $r
 resolving
 
 httpx(){
-cat $domain/domains.txt | httpx -threads 200 -o $domain/recon/httpx.txt
+cat $domain/domains.txt|httpx -threads 200 -o $domain/recon/httpx.txt
 }
 httpx
 
@@ -107,6 +107,7 @@ waybackurl
 
 ffuf(){
 ffuf -c -u "FUZZ" -w $domain/recon/wayback/wayback.txt -of csv -o $domain/recon/wayback/val-tmp.txt
+
 cat $domain/recon/wayback/val-tmp.txt | grep http | awk -F "," '{print $1}' > $domain/recon/wayback/valid.txt
 
 rm $domain/recon/wayback/val-tmp.txt
