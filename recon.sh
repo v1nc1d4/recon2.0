@@ -117,8 +117,8 @@ ffuf
 notifySlack(){
 echo -e "$GREEN Trigger Slack Notification"
 takeover="$($domain/nuclei/takeover.txt | wc -l)"
-totalsum=$(cat $domain/recon/httpx.txt | wc -l)
-intfiles=$(cat $domain/nuclei/*.txt | wc -l)
+totalsum="$(cat $domain/recon/httpx.txt | wc -l)"
+intfiles="$(cat $domain/nuclei/*.txt | wc -l)"
 nucleiCveScan="$(cat $domain/nuclei/cve.txt)"
 nucleiFileScan="$(cat $domain/nuclei/files.txt)"
 nucleiVulnscan="$(cat $domain/nuclei/vulnerabilities.txt)"
