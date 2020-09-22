@@ -126,15 +126,15 @@ nucleiTechscan="$(cat $domain/nuclei/technologies.txt | wc -l)"
 nucleiMisconfscan="$(cat $domain/nuclei/misconfiguration.txt | wc -l)"
 nucleiPanelscan="$(cat $domain/nuclei/panels/panels.txt | wc -l)"
 
-curl -s -X POST -H 'Content-type: application/json' --data '{"text":"Found '$totalsum' live hosts for '$domain'"}' $slack_url 2 > /dev/null
-curl -s -X POST -H 'Content-type: application/json' --data '{"text":"Found '$intfiles' interesting files using nuclei"}' $slack_url 2 > /dev/null
-curl -s -X POST -H 'Content-type: application/json' --data '{"text":"Found '$takeover' subdomain takeovers on '$domain'"}' $slack_url 2 > /dev/null
-curl -s -X POST -H 'Content-type: application/json' --data "{'text':'CVEs found for $domain: \n $nucleiCveScan'}" $slack_url 2>/dev/null
-curl -s -X POST -H 'Content-type: application/json' --data "{'text':'Files for $domain: \n $nucleiFileScan'}" $slack_url 2>/dev/null
-curl -s -X POST -H 'Content-type: application/json' --data "{'text':'vulnerabilities Found for $domain: \n $nucleiVulnscan'}" $slack_url 2>/dev/null
-curl -s -X POST -H 'Content-type: application/json' --data "{'text':'technologies Found for $domain: \n $nucleiTechscan'}"$slack_url 2>/dev/null
-curl -s -X POST -H 'Content-type: application/json' --data "{'text':'misconfiguration Found for $domain: \n $nucleiMisconfscan'}" $slack_url 2>/dev/null
-curl -s -X POST -H 'Content-type: application/json' --data "{'text':'Panels Found for $domain: \n $nucleiPanelscan'}" $slack_url 2>/dev/null
+curl -s -X POST -H 'Content-type: application/json' --data '{"text":"Found '$totalsum' live hosts for '$domain'"}' $slack_url > /dev/null 2>&1
+curl -s -X POST -H 'Content-type: application/json' --data '{"text":"Found '$intfiles' interesting files using nuclei"}' $slack_url > /dev/null 2>&1
+curl -s -X POST -H 'Content-type: application/json' --data '{"text":"Found '$takeover' subdomain takeovers on '$domain'"}' $slack_url > /dev/null 2>&1
+curl -s -X POST -H 'Content-type: application/json' --data "{'text':'CVEs found for $domain: \n $nucleiCveScan'}" $slack_url 2> /dev/null 2>&1
+curl -s -X POST -H 'Content-type: application/json' --data "{'text':'Files for $domain: \n $nucleiFileScan'}" $slack_url > /dev/null 2>&1
+curl -s -X POST -H 'Content-type: application/json' --data "{'text':'vulnerabilities Found for $domain: \n $nucleiVulnscan'}" $slack_url > /dev/null 2>&1
+curl -s -X POST -H 'Content-type: application/json' --data "{'text':'technologies Found for $domain: \n $nucleiTechscan'}"$slack_url > /dev/null 2>&1
+curl -s -X POST -H 'Content-type: application/json' --data "{'text':'misconfiguration Found for $domain: \n $nucleiMisconfscan'}" $slack_url > /dev/null 2>&1
+curl -s -X POST -H 'Content-type: application/json' --data "{'text':'Panels Found for $domain: \n $nucleiPanelscan'}" $slack_url > /dev/null 2>&1
 echo -e "$GREEN Done."
 }
 notifySlack
