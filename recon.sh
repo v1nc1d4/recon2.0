@@ -22,7 +22,7 @@ checkArguments() {
 }
 checkArguments
 makedir() {
-mkdir -p $domain $domain/sources $domain/recon $domain/nuclei $domain/recon/wayback $domain/recon/gf
+mkdir -p $domain $domain/sources $domain/recon $domain/nuclei $domain/recon/wayback
 }
 makedir
 
