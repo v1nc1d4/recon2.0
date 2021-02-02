@@ -14,11 +14,14 @@ A automatied Script for recon by the use of some other Tools
 wget the `install.sh` script and run it
 `wget https://raw.githubusercontent.com/blackmarketer/recon2.0/master/install.sh`
 
+`chmod +x install.sh`
+
 `bash install.sh`
 
 ### Manual installation
 - `git clone https://github.com/blackmarketer/recon2.0`
  - `cd recon2.0`
+ - `chmod +x install.sh`
  - `./install.sh`
 ## Usage
 
